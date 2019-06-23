@@ -4,7 +4,6 @@ function showShallow(){
     document.getElementsByClassName("dot")[0].classList.add("dot-simple-shallow")
     document.getElementById("show-text").innerHTML = '&nbsp; Shallow <i class="icon icon-caret color-primary"></i>'
     document.getElementById("shallow-button").classList.remove("text-gray")
-    document.getElementById("dropdown-menu").classList.remove("active")
     console.log("Showing Shallow")
 }
 
