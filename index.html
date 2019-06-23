@@ -11,8 +11,8 @@
     <body style="background:#ffffff;">
 
             <header class="navbar mt-2">
-                    <section class="navbar-center">
-                        <a href="index.html" class="navbar-brand text-bold mx-2">Just breathe</a>
+                    <section class="navbar p-centered text-center">
+                        <a href="index.html" class="navbar-brand text-large text-bold mx-2">Just breathe</a>
                         <div class="hide-sm">
                             <div onclick="showShallow()" class="btn btn-link text-large" id="shallow-button">Shallow</div>
                             <a onclick="showMid()" class="btn btn-link text-large" id="mid-button">Mid</a>
@@ -22,19 +22,17 @@
                         </div>
                         <div class="show-sm">
                             <div class="dropdown">
-                                <a href="#" id="show-text" class="btn btn-link dropdown-toggle float-right" tabindex="0">
-                                    Select exercise<i class="icon icon-caret color-primary"></i>  </a>
-                                <ul class="menu">
-                                    <li class="menu-item" id="shallow-button">
+                                <a id="show-text" class="btn btn-link dropdown-toggle text-center" tabindex="0">Choose <i class="icon icon-caret color-primary"></i>  </a>
+                                <ul class="menu p-center" id="dropdown-menu">
+                                    <li class="menu-item c-hand" id="shallow-button">
                                         <a onClick="showShallow()">Shallow</a>
                                     </li>
-                                    <li class="menu-item" id="mid-button">
+                                    <li class="menu-item c-hand" id="mid-button">
                                             <a onClick="showMid()">Mid</a>
                                         </li>
-                                        <li class="menu-item" id="deep-button">
+                                        <li class="menu-item c-hand" id="deep-button">
                                                 <a onClick="showDeep()">Deep</a>
-                                            </li>
-                                    <li href="#" class="menu-item text-secondary">Abdominal</li>
+                                        </li>
                                     <li href="#" class="menu-item text-secondary">4-7-8</li>
                                 </ul>
                                 
@@ -44,8 +42,6 @@
             </header>
             
         <div class="container grid-sm">   
-                
-                <br>
                 <br>
                 <br>
                 <br>
