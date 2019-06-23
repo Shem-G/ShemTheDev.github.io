@@ -17,7 +17,7 @@
                         <section class="navbar-center">
                             <a href="index.html" class="navbar-brand text-bold mr-2">Just breathe</a>
                             <div class="hide-sm">
-                                <a onclick="showShallow()" class="btn btn-link text-large" id="shallow-button">Shallow</a>
+                                <div onclick="showShallow()" class="btn btn-link text-large" id="shallow-button">Shallow</div>
                                 <a onclick="showMid()" class="btn btn-link text-large" id="mid-button">Mid</a>
                                 <a onclick="showDeep()" class="btn btn-link text-large" id="deep-button">Deep</a>
                                 <a href="#" class="btn btn-link text-secondary text-large">Abdominal</a>
@@ -25,23 +25,22 @@
                             </div>
                             <div class="show-sm">
                                 <div class="dropdown">
-                                    <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
-                                        <i class="icon icon-menu color-primary"></i>
-                                    </a>
-
+                                    <a href="#" id="show-text" class="btn btn-link dropdown-toggle float-right" tabindex="0">
+                                        Select exercise<i class="icon icon-caret color-primary"></i>  </a>
                                     <ul class="menu">
                                         <li class="menu-item" id="shallow-button">
                                             <a onClick="showShallow()">Shallow</a>
                                         </li>
                                         <li class="menu-item" id="mid-button">
-                                                <a href=""onClick="showMid()">Mid</a>
+                                                <a onClick="showMid()">Mid</a>
                                             </li>
                                             <li class="menu-item" id="deep-button">
-                                                    <a href="" onClick="showDeep()">Deep</a>
+                                                    <a onClick="showDeep()">Deep</a>
                                                 </li>
                                         <li href="#" class="menu-item text-secondary">Abdominal</li>
                                         <li href="#" class="menu-item text-secondary">4-7-8</li>
                                     </ul>
+                                    
                                 </div>
                             </div>
                         </section>
