@@ -2,12 +2,13 @@
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    display: inline-block;
-    position: absolute;
-    margin: 0 auto;
     transform: scale(0.3);
   }
 
+.dot-container {
+    width: 100%;
+    height: 300px;
+}
 
 .dot-simple-shallow {
     animation: simple-shallow 10s ease-in-out alternate infinite;
@@ -19,44 +20,6 @@
 
 .dot-simple-deep {
     animation: simple-shallow 20s ease-in-out alternate infinite;
-}
-
-.dot-text {
-    text-align: center;
-    color: #fff;
-    padding-top: 25%;
-    padding-bottom: 25%;
-    font-size: 4rem;
-}
-
-.dot-text-simple-shallow::after {
-    animation: dot-text-change 10s ease-in-out alternate infinite;
-}
-
-.dot-text-simple-mid::after {
-    animation: dot-text-change 15s ease-in-out alternate infinite;
-}
-
-.dot-text-simple-deep::after {
-    animation: dot-text-change 20s ease-in-out alternate infinite;
-}
-
-@keyframes dot-text-change {
-    0%{
-        content: "inhale";
-    }
-    
-    45% {
-        content: "hold";
-    }
-
-    55% {
-        content: "exhale";
-    }
-}
-
-@keyframes simple-stopeed {
-
 }
 
 @-webkit-keyframes simple-shallow {
