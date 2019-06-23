@@ -11,23 +11,15 @@
 
      
             
-        <div class="container grid-xl">   
+        <div class="container grid-sm">   
                 <header class="navbar">
-                        <section class="navbar-section">
-                            <a href="index.html" class="navbar-brand text-bold mr-2">DEEP BREATHS</a>
-                            <div class="dropdown">
-                                <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
-                                    Simple <i class="icon icon-caret"></i>
-                                </a>
-                                <ul class="menu">
-                                <li><a href="#">Shallow</a></li>
-                                <li><a href="#">intermediate</a></li>
-                                <li><a href="#">Deep</a></li>
-                                </ul>
-                            </div>
-                            
-                            <a href="..." class="btn btn-link">Abdominal</a>
-                            <a href="..." class="btn btn-link">4-7-8</a>
+                        <section class="navbar-center">
+                            <a href="index.html" class="navbar-brand text-bold mr-2">Just breathe</a>
+                            <a href="#" class="btn btn-link">Shallow</a>
+                            <a href="#" class="btn btn-link text-gray">Mid</a>
+                            <a href="#" class="btn btn-link text-gray">Deep</a>
+                            <a href="#" class="btn btn-link text-secondary">Abdominal</a>
+                            <a href="#" class="btn btn-link text-secondary">4-7-8</a>
                         </section>
                     </header> 
                     
@@ -42,6 +34,14 @@
                     <div class="dot dot-simple-shallow" id="breathing-button">
                     </div>
                 </div> 
+                <div class="dot-container" style="display:none;">
+                        <div class="dot dot-simple-mid" id="breathing-button">
+                        </div>
+                    </div> 
+                    <div class="dot-container" style="display:none;">
+                            <div class="dot dot-simple-deep" id="breathing-button">
+                            </div>
+                        </div> 
             </div>
 
         </div>
