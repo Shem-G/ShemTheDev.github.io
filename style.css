@@ -1,0 +1,140 @@
+.dot {
+    height: 300px;
+    width: 300px;
+    background-color: #b3cde0;
+    border-radius: 50%;
+    display: inline-block;
+    animation: simple-shallow 10s ease-in-out alternate infinite;
+    position: absolute;
+    margin: 0 auto;
+  }
+
+.dot-container {
+    background-color: 000;
+}
+
+.dot-simple-shallow {
+    animation: simple-shallow 10s ease-in-out alternate infinite;
+}
+
+.dot-simple-intermediate {
+    animation: simple-shallow 15s ease-in-out alternate infinite;
+}
+
+.dot-simple-deep {
+    animation: simple-shallow 20s ease-in-out alternate infinite;
+}
+
+.dot-text {
+    text-align: center;
+    color: #fff;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    font-size: 4rem;
+}
+
+.dot-text-simple-shallow::after {
+    animation: dot-text-change 10s ease-in-out alternate infinite;
+}
+
+.dot-text-simple-intermediate::after {
+    animation: dot-text-change 15s ease-in-out alternate infinite;
+}
+
+.dot-text-simple-deep::after {
+    animation: dot-text-change 20s ease-in-out alternate infinite;
+}
+
+@keyframes dot-text-change {
+    0%{
+        content: "inhale";
+    }
+    
+    45% {
+        content: "hold";
+    }
+
+    55% {
+        content: "exhale";
+    }
+}
+
+@-webkit-keyframes simple-shallow {
+    0% {
+        background-color: #03396c;
+        transform: scale(0.3);
+    }
+
+    10% {
+        background-color: #03396c;
+        transform: scale(0.3);
+    }
+
+    45% {
+        transform: scale(1);
+        background-color: #b3cde0;
+    }
+
+    50% {
+        transform: scale(1);
+        background-color: #b3cde0;
+    }
+
+    55% {
+        transform: scale(1);
+        background-color: #b3cde0;
+    }
+
+    95% {
+        background-color: #03396c;
+        transform: scale(0.3);
+    }
+    
+    100% {
+        transform: scale(0.3);
+        background-color: #03396c;
+    }
+}
+
+@keyframes simple-shallow {
+    0% {
+        background-color: #03396c;
+        transform: scale(0.3);
+    }
+
+    10% {
+        background-color: #03396c;
+        transform: scale(0.3);
+    }
+
+    45% {
+        transform: scale(1);
+        background-color: #b3cde0;
+    }
+
+    50% {
+        transform: scale(1);
+        background-color: #b3cde0;
+        
+    }
+
+    55% {
+        transform: scale(1);
+        background-color: #b3cde0;
+    }
+
+    95% {
+        background-color: #03396c;
+        transform: scale(0.3);
+    }
+    
+    100% {
+        transform: scale(0.3);
+        background-color: #03396c;
+    }
+
+}
+
+@-webkit-keyframes simple-intermediate {
+
+}
