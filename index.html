@@ -10,112 +10,68 @@
     </head>
     <body style="background:#ffffff;">
 
-     
+            <header class="navbar mt-2">
+                    <section class="navbar-center">
+                        <a href="index.html" class="navbar-brand text-bold mx-2">Just breathe</a>
+                        <div class="hide-sm">
+                            <div onclick="showShallow()" class="btn btn-link text-large" id="shallow-button">Shallow</div>
+                            <a onclick="showMid()" class="btn btn-link text-large" id="mid-button">Mid</a>
+                            <a onclick="showDeep()" class="btn btn-link text-large" id="deep-button">Deep</a>
+                            <a href="#" class="btn btn-link text-secondary text-large">Abdominal</a>
+                            <a href="#" class="btn btn-link text-secondary text-large">4-7-8</a>
+                        </div>
+                        <div class="show-sm">
+                            <div class="dropdown">
+                                <a href="#" id="show-text" class="btn btn-link dropdown-toggle float-right" tabindex="0">
+                                    Select exercise<i class="icon icon-caret color-primary"></i>  </a>
+                                <ul class="menu">
+                                    <li class="menu-item" id="shallow-button">
+                                        <a onClick="showShallow()">Shallow</a>
+                                    </li>
+                                    <li class="menu-item" id="mid-button">
+                                            <a onClick="showMid()">Mid</a>
+                                        </li>
+                                        <li class="menu-item" id="deep-button">
+                                                <a onClick="showDeep()">Deep</a>
+                                            </li>
+                                    <li href="#" class="menu-item text-secondary">Abdominal</li>
+                                    <li href="#" class="menu-item text-secondary">4-7-8</li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </section>
+            </header>
             
         <div class="container grid-sm">   
-                <header class="navbar">
-                        <section class="navbar-center">
-                            <a href="index.html" class="navbar-brand text-bold mr-2">Just breathe</a>
-                            <div class="hide-sm">
-                                <div onclick="showShallow()" class="btn btn-link text-large" id="shallow-button">Shallow</div>
-                                <a onclick="showMid()" class="btn btn-link text-large" id="mid-button">Mid</a>
-                                <a onclick="showDeep()" class="btn btn-link text-large" id="deep-button">Deep</a>
-                                <a href="#" class="btn btn-link text-secondary text-large">Abdominal</a>
-                                <a href="#" class="btn btn-link text-secondary text-large">4-7-8</a>
-                            </div>
-                            <div class="show-sm">
-                                <div class="dropdown">
-                                    <a href="#" id="show-text" class="btn btn-link dropdown-toggle float-right" tabindex="0">
-                                        Select exercise<i class="icon icon-caret color-primary"></i>  </a>
-                                    <ul class="menu">
-                                        <li class="menu-item" id="shallow-button">
-                                            <a onClick="showShallow()">Shallow</a>
-                                        </li>
-                                        <li class="menu-item" id="mid-button">
-                                                <a onClick="showMid()">Mid</a>
-                                            </li>
-                                            <li class="menu-item" id="deep-button">
-                                                    <a onClick="showDeep()">Deep</a>
-                                                </li>
-                                        <li href="#" class="menu-item text-secondary">Abdominal</li>
-                                        <li href="#" class="menu-item text-secondary">4-7-8</li>
-                                    </ul>
-                                    
-                                </div>
-                            </div>
-                        </section>
-                </header>
-                    <br>
-                    <br>   
-                    <br>
-                    <br>
-                <div class="dot-container">
+                
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="dot-container mt-2">
                         <div class="dot p-centered"></div>
                 </div>
-<!--
-                <div class="column col-3 col-sm-12"  style="padding-bottom: .4rem; padding-top: .4rem;">
-                  <div class="card"">
-                        <div class="card-image">
-                            <img src="img1.jpeg" class="img-responsive">
+                <div class="modal modal-sm active" id="modal-welcome">
+                    <a href="#close" class="modal-overlay" aria-label="Close"></a>
+                    <div class="modal-container">
+                        <div class="modal-header">
+                            <a href="#close" class="btn btn-clear float-right" aria-label="Close"></a>
+                            <div class="modal-title h5 text-center">Just breathe.</div>
                         </div>
-                        <div class="card-header">
-                            <div class="card-title h5">This is blerj</div>
-                            <div class="card-subtitle text-gray">Sheizert and sheizook</div>
+                        <div class="modal-body">
+                            <div class="content text-center text-primary">
+                                <div class="tiny-dot p-centered"></div>
+                                <br>
+                                <p>Inhale as the circle grows</p>
+                                <p>Hold while the circle is stopped</p>
+                                <p>Exhale as the circle shrinks</p>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <p>Hey lil moomer, hey lil moo, hey lil moomer with your moo moo moo</p>
-                        </div>
-                    </div>
-                
-                </div>
-
-                <div class="column col-3 col-sm-12"  style="padding-bottom: .4rem; padding-top: .4rem;">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img1.jpeg" class="img-responsive">
-                        </div>
-                        <div class="card-header">
-                            <div class="card-title h5">This is blerj</div>
-                            <div class="card-subtitle text-gray">Sheizert and sheizook</div>
-                        </div>
-                        <div class="card-body">
-                            <p>Hey lil moomer, hey lil moo, hey lil moomer with your moo moo moo</p>
+                        <div class="modal-footer">
+                            <button onclick="hideModal()" class="btn btn-primary p-centered">Begin</button>
                         </div>
                     </div>
                 </div>
-
-                <div class="column col-3 col-sm-12"  style="padding-bottom: .4rem; padding-top: .4rem;">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="img1.jpeg" class="img-responsive">
-                            </div>
-                            <div class="card-header">
-                                <div class="card-title h5">This is blerj</div>
-                                <div class="card-subtitle text-gray">Sheizert and sheizook</div>
-                            </div>
-                            <div class="card-body">
-                                <p>Hey lil moomer, hey lil moo, hey lil moomer with your moo moo moo</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column col-3 col-sm-12"  style="padding-bottom: .4rem; padding-top: .4rem;">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="img1.jpeg" class="img-responsive">
-                                </div>
-                                <div class="card-header">
-                                    <div class="card-title h5">This is blerj</div>
-                                    <div class="card-subtitle text-gray">Sheizert and sheizook</div>
-                                </div>
-                                <div class="card-body">
-                                    <p>Hey lil moomer, hey lil moo, hey lil moomer with your moo moo moo</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    
-                    -->
-                    
     </body>
 </html>

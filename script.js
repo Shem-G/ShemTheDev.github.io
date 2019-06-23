@@ -52,3 +52,7 @@ function hideAll(){
     document.getElementById("mid-button").classList.add("text-gray")
     document.getElementById("deep-button").classList.add("text-gray")
 }
+
+function hideModal(){
+    document.getElementById("modal-welcome").classList.remove("active")
+}
