@@ -1,17 +1,14 @@
 .dot {
     height: 300px;
     width: 300px;
-    background-color: #b3cde0;
+    
     border-radius: 50%;
     display: inline-block;
-    animation: simple-shallow 10s ease-in-out alternate infinite;
     position: absolute;
     margin: 0 auto;
+    transform: scale(0.3);
   }
 
-.dot-container {
-    background-color: 000;
-}
 
 .dot-simple-shallow {
     animation: simple-shallow 10s ease-in-out alternate infinite;
@@ -19,7 +16,6 @@
 
 .dot-simple-mid {
     animation: simple-shallow 15s ease-in-out alternate infinite;
-    
 }
 
 .dot-simple-deep {

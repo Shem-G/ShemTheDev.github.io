@@ -4,7 +4,8 @@
         <link rel="stylesheet" href="spectre.min.css">
         <link rel="stylesheet" href="icons.min.css">
         <link rel="stylesheet" href="style.css">
-        <link rel="script" type="text/javascript" href="script.js">
+        <script type="text/javascript" src="script.js"></script>
+        
         <meta charset="UTF-8">
     </head>
     <body style="background:#ffffff;">
@@ -15,14 +16,13 @@
                 <header class="navbar">
                         <section class="navbar-center">
                             <a href="index.html" class="navbar-brand text-bold mr-2">Just breathe</a>
-                            <a href="#" class="btn btn-link">Shallow</a>
-                            <a href="#" class="btn btn-link text-gray">Mid</a>
-                            <a href="#" class="btn btn-link text-gray">Deep</a>
+                            <a onclick="showShallow()" class="btn btn-link" id="shallow-button">Shallow</a>
+                            <a onclick="showMid()" class="btn btn-link text-gray" id="mid-button">Mid</a>
+                            <a onclick="showDeep()" class="btn btn-link text-gray" id="deep-button">Deep</a>
                             <a href="#" class="btn btn-link text-secondary">Abdominal</a>
                             <a href="#" class="btn btn-link text-secondary">4-7-8</a>
                         </section>
-                    </header> 
-                    
+                    </header>
                     <br>
                     <br>   
                     <br>
@@ -31,19 +31,11 @@
              
             <div class="column col-4 col-mx-auto">
                 <div class="dot-container">
-                    <div class="dot dot-simple-shallow" id="breathing-button">
-                    </div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
                 </div> 
-                <div class="dot-container" style="display:none;">
-                        <div class="dot dot-simple-mid" id="breathing-button">
-                        </div>
-                    </div> 
-                    <div class="dot-container" style="display:none;">
-                            <div class="dot dot-simple-deep" id="breathing-button">
-                            </div>
-                        </div> 
             </div>
-
         </div>
 <!--
                 <div class="column col-3 col-sm-12"  style="padding-bottom: .4rem; padding-top: .4rem;">
@@ -109,5 +101,6 @@
 
                     
                     -->
+                    
     </body>
 </html>
