@@ -1,7 +1,6 @@
 .dot {
     height: 300px;
     width: 300px;
-    
     border-radius: 50%;
     display: inline-block;
     position: absolute;
@@ -54,6 +53,10 @@
     55% {
         content: "exhale";
     }
+}
+
+@keyframes simple-stopeed {
+
 }
 
 @-webkit-keyframes simple-shallow {
