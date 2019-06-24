@@ -12,7 +12,7 @@
 
             <header class="navbar mt-2">
                     <section class="navbar p-centered text-center">
-                        <a href="index.html" class="navbar-brand text-large text-bold mx-2">Just breathe</a>
+                        <a href="index.html" class="navbar-brand text-large text-bold mx-2" style="font-size: 150%">Just breathe</a>
                         <div class="hide-sm">
                             <div onclick="showShallow()" class="btn btn-link text-large" id="shallow-button">Shallow</div>
                             <div onclick="showMid()" class="btn btn-link text-large" id="mid-button">Mid</div>
@@ -25,7 +25,7 @@
                             <!-- mutually exclusive Accordions example (with same input names) -->
                             <div class="accordion">
                                     <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-                                    <label class="accordion-header text-primary text-bold" for="accordion-1" id="show-text">
+                                    <label class="accordion-header text-large text-primary" for="accordion-1" id="show-text">
                                       Choose <i class="icon icon-arrow-right mr-1 text-primary"></i>
                                     </label>
                                     <div class="accordion-body">
@@ -33,6 +33,8 @@
                                       <div class="btn btn-link btn-block btn-lg" id="shallow-button" onclick="showShallow()">Shallow</div>
                                       <div class="btn btn-link btn-block btn-lg" id="mid-button" onclick="showMid()">Mid</div>
                                       <div class="btn btn-link btn-block btn-lg" id="deep-button" onclick="showDeep()">Deep</div>
+                                      <div class="btn btn-link btn-block btn-lg" disabled id="deep-button" onclick="">Abdominal</div>
+                                      <div class="btn btn-link btn-block btn-lg" disabled id="deep-button" onclick="">4-7-8</div>
                                     </div>
                                   </div>
                                     <!--<button class="btn btn-action btn-link s-circle dropdown-toggle"><i class="icon icon-arrow-down"></i></button>
