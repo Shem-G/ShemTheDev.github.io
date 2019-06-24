@@ -10,6 +10,13 @@
     background-color: #03396c;
   }
 
+  .dot-outline {
+    height: 40vh;
+    width: 40vh;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+  }
+
   .tiny-dot {
     height: 50px;
     width: 50px;
