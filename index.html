@@ -1,129 +1,59 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141260431-2"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-141260431-2');
-        </script>
-
-        <link rel="stylesheet" href="spectre.min.css">
-        <link rel="stylesheet" href="icons.min.css">
-        <link rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="script.js"></script>
         <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="mobile-web-app-capable" content="yes">
         <meta charset="UTF-8">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
-        <title>Just breathe - Simple deep breathing</title>
+        <title>Shem the Dev</title>
 
+        <link rel="stylesheet" type="text/css" href="style.css">
 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     </head>
-    <body style="background:#ffffff;">
 
-            <header class="navbar mt-2">
-                    <section class="navbar p-centered text-center">
-                        <a href="index.html" class="navbar-brand text-large text-bold mx-2" style="font-size: 150%">Just breathe</a>
-                        <div class="hide-sm">
-                            <div onclick="showShallow()" class="btn btn-link text-large" id="shallow-button">Shallow</div>
-                            <div onclick="showMid()" class="btn btn-link text-large" id="mid-button">Mid</div>
-                            <div onclick="showDeep()" class="btn btn-link text-large" id="deep-button">Deep</div>
-                        </div>
-
-                        <div class="show-sm">
-                            <!-- mutually exclusive Accordions example (with same input names) -->
-                            <div class="accordion">
-                                    <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-                                    <label class="accordion-header text-large text-primary p-float" for="accordion-1" id="show-text">
-                                      Choose <i class="icon icon-arrow-right mr-1 text-primary"></i>
-                                    </label>
-                                    <div class="accordion-body">
-                                      <!-- Accordions content -->
-                                      <div class="btn btn-link btn-block btn-lg" id="shallow-button" onclick="showShallow()">Shallow</div>
-                                      <div class="btn btn-link btn-block btn-lg" id="mid-button" onclick="showMid()">Mid</div>
-                                      <div class="btn btn-link btn-block btn-lg" id="deep-button" onclick="showDeep()">Deep</div>
-                                     </div>
-                                  </div>
-                                    <!--<button class="btn btn-action btn-link s-circle dropdown-toggle"><i class="icon icon-arrow-down"></i></button>
-
-                                    <ul class="menu p-centered" id="dropdown-menu">
-                                            <li class="menu-item c-hand" id="shallow-button">
-                                                <a onClick="showShallow()">Shallow</a>
-                                            </li>
-                                            <li class="menu-item c-hand" id="mid-button">
-                                                    <a onClick="showMid()">Mid</a>
-                                                </li>
-                                                <li class="menu-item c-hand" id="deep-button">
-                                                        <a onClick="showDeep()">Deep</a>
-                                                </li>
-                                            <li href="#" class="menu-item text-secondary">4-7-8</li>
-                                        </ul>
-                                    -->
-                            </div>
-
-                            <!--<div class="dropdown">
-                                <a id="show-text" class="btn btn-link dropdown-toggle text-center" tabindex="0">Choose <i class="icon icon-caret color-primary"></i>  </a>
-                                <ul class="menu p-center" id="dropdown-menu">
-                                    <li class="menu-item c-hand" id="shallow-button">
-                                        <a onClick="showShallow()">Shallow</a>
-                                    </li>
-                                    <li class="menu-item c-hand" id="mid-button">
-                                            <a onClick="showMid()">Mid</a>
-                                        </li>
-                                        <li class="menu-item c-hand" id="deep-button">
-                                                <a onClick="showDeep()">Deep</a>
-                                        </li>
-                                    <li href="#" class="menu-item text-secondary">4-7-8</li>
-                                </ul>
-                                
-                            </div>
-                        </div>
-                    -->
-                    </section>
-            </header>
-            
-        <div class="container grid-sm p-centered">   
-                <br>
-                <br>
-                <br>
-                <div class="dot-container mt-2">
-                    <div class="dot-outline p-centered"><div class="dot p-centered"></div></div>
-                    
-                </div>
-                <div class="modal modal-sm active" id="modal-welcome">
-                    <a onclick="hideModal()" class="modal-overlay" aria-label="Close"></a>
-                    <div class="modal-container">
-                        <div class="modal-header">
-                            <a touchstart="hideModal()" class="btn btn-clear float-right" aria-label="Close"></a>
-                            <div class="modal-title h5 text-center text-primary">Just breathe.</div>
-                        </div>
-                        <div class="modal-body">
-                            <div class="content text-center">
-                                <div class="tiny-dot p-centered"></div>
-                                <br>
-                                <p>Inhale as the circle grows</p>
-                                <p>Hold while the circle is stopped</p>
-                                <p>Exhale as the circle shrinks</p>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button onclick="hideModal()" class="btn btn-primary p-centered">Begin</button>
-                        </div>
+    <body>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="text-monospace align-middle" id="">
+                            <h1 class="display-3">Shem the Dev</h1>
+                            <p class="text-monospace text-muted font-italic">Creating apps, games and websites</p>
                     </div>
                 </div>
+            </div>
+            <br>
+            <div class="row">
+                        <ul class="list-unstyled">
+                            <li class="media mb-5 pr-3 shadow">
+                                <img src="img/breathe.jpg" class="align-self-center mr-3 p-2" alt="...">
+                                <div class="media-body align-self-center py-3 text-justify">
+                                    <h5 class="mt-0">Just Breathe</h5>
+                                    Just breathe is a minimalist, simple web app designed to do just one thing- help you breathe deeply. It forgoes distractions like settings, statistics, and sign-ins. All you have to do is go to the app (on web or mobile) and just breathe.
+                                </div>
+                            </li>
+                            <li class="media mb-5 pr-3 shadow">
+                                    <img src="img/noverantale.jpg" class="align-self-center mr-3 p-2" alt="...">
+                                    <div class="media-body align-self-center py-3 text-justify">
+                                        <h5 class="mt-0">Noverantale.com</h5>
+                                        Wordpress/WooCommerce-based eCommerce store for a successful Instagram artist-influencer. VPS-hosted and administrated.
+                                    </div>
+                                </li>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                <footer>
-                <div class="text-secondary p-centered text-center"><a href="github.com/ShemTheDev" class="text-secondary">ShemTheDev</a> © 2019</div>
-                </footer>
     </body>
 </html>
