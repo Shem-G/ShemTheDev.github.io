@@ -15,7 +15,7 @@
 
 .the-grid {
     background-size: 70px 70px;
-    background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
+    background-image: linear-gradient(to right, #000 1px, transparent 1px), linear-gradient(to bottom, #000 1px, transparent 1px);
     behavior: url(/pie/PIE.htc);
 }
 
