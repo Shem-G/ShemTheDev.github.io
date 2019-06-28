@@ -30,3 +30,26 @@
     width: 100%;
     text-align: right;
 }
+
+.content-card {
+    animation: card-shrink 0.5s 1 forwards;
+}
+
+.content-card:hover {
+    animation: card-expand 0.5s 1 forwards;
+}
+
+@keyframes card-expand {
+    from {transform: scale(1);}
+    to {transform: scale(1.1);}
+}
+
+@keyframes card-shrink {
+    from {transform: scale(1.1);}
+    to {transform: scale(1);}
+}
+
+body.preload *{
+    animation-duration: 0s !important;
+    -webkit-animation-duration: 0s !important;
+}
