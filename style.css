@@ -9,10 +9,6 @@
     clip-path: circle(50% at 50% 50%);
 }
 
-.body {
-    background-color: #1D2023;
-}
-
 .black {
     background-color: #1D2023;
 }
@@ -24,11 +20,6 @@
 .the-grid {
     background-size: 70px 70px;
     background-image: linear-gradient(to right, #000 1px, transparent 1px), linear-gradient(to bottom, #000 1px, transparent 1px), url("img/bg.png");    
-}
-
-.rad-shadow {
-    -webkit-box-shadow: 0px 0px 10px 5px #E0FFFF; 
-    box-shadow: 0px 0px 10px 5px #E0FFFF;
 }
 
 .header-card {
