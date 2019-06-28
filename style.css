@@ -13,10 +13,14 @@
     background-color: #1D2023;
 }
 
+.body-noise {
+    background-image: url("img/bg.png");
+}
+
 .the-grid {
     background-size: 70px 70px;
-    background-image: linear-gradient(to right, #000 1px, transparent 1px), linear-gradient(to bottom, #000 1px, transparent 1px);
-    behavior: url(/pie/PIE.htc);
+    background-image: linear-gradient(to right, #000 1px, transparent 1px), linear-gradient(to bottom, #000 1px, transparent 1px), url("img/bg.png");
+    
 }
 
 .rad-shadow {
