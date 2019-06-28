@@ -9,6 +9,10 @@
     clip-path: circle(50% at 50% 50%);
 }
 
+.body {
+    background-color: #1D2023;
+}
+
 .black {
     background-color: #1D2023;
 }
@@ -19,8 +23,7 @@
 
 .the-grid {
     background-size: 70px 70px;
-    background-image: linear-gradient(to right, #000 1px, transparent 1px), linear-gradient(to bottom, #000 1px, transparent 1px), url("img/bg.png");
-    
+    background-image: linear-gradient(to right, #000 1px, transparent 1px), linear-gradient(to bottom, #000 1px, transparent 1px), url("img/bg.png");    
 }
 
 .rad-shadow {
@@ -37,10 +40,12 @@
 
 .content-card {
     animation: card-shrink 0.5s 1 forwards;
+    -webkit-animation: card-shrink 0.5s 1 forwards;
 }
 
 .content-card:hover {
     animation: card-expand 0.5s 1 forwards;
+    -webkit-animation: card-expand 0.5s 1 forwards;
 }
 
 @keyframes card-expand {
@@ -49,6 +54,16 @@
 }
 
 @keyframes card-shrink {
+    from {transform: scale(1.1);}
+    to {transform: scale(1);}
+}
+
+@-moz-keyframes card-expand {
+    from {transform: scale(1);}
+    to {transform: scale(1.1);}
+}
+
+@-moz-keyframes card-shrink {
     from {transform: scale(1.1);}
     to {transform: scale(1);}
 }
