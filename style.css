@@ -29,6 +29,12 @@
     text-align: right;
 }
 
+.header-card {
+    @media (max-width: 575.98px){
+      font-size: 10px;
+    }
+}
+
 .content-card {
     animation: card-shrink 0.5s 1 forwards;
     -webkit-animation: card-shrink 0.5s 1 forwards;
