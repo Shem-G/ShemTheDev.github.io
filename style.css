@@ -9,6 +9,12 @@
     clip-path: circle(50% at 50% 50%);
 }
 
+.round-img-lg {
+    width: 125px;
+    height: 125px;
+    clip-path: circle(50% at 50% 50%);
+}
+
 .black {
     background-color: #1D2023;
 }
