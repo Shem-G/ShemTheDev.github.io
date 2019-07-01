@@ -29,13 +29,6 @@
 }
 
 .header-card {
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    text-align: right;
-}
-
-.header-card {
     @media (max-width: 575.98px){
       font-size: 10px;
     }
