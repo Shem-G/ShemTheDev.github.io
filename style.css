@@ -20,12 +20,13 @@
 }
 
 .body-noise {
-    background-image: url("img/bg.png");
+    background-color: #000000;
 }
 
 .the-grid {
-    background-size: 70px 70px;
-    background-image: linear-gradient(to right, #000 1px, transparent 1px), linear-gradient(to bottom, #000 1px, transparent 1px), url("img/bg.png");    
+    background: rgb(41,108,214);
+    background: linear-gradient(0deg, rgba(41,108,214,1) 0%, rgba(90,9,121,1) 13%, rgba(0,0,0,1) 37%), url("img/genesis_grid.png"); 
+    
 }
 
 .header-card {
