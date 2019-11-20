@@ -19,14 +19,17 @@
     background-color: #1D2023;
 }
 
-.body-noise {
-    background-color: #000000;
+.bg-grid {
+    background-image: url("img\genesis_grid.png");
+    background-repeat: repeat;
 }
 
 .the-grid {
-    background: rgb(41,108,214);
-    background: linear-gradient(0deg, rgba(41,108,214,1) 0%, rgba(90,9,121,1) 13%, rgba(0,0,0,1) 37%), url("img/genesis_grid.png"); 
+    background: rgb(78,9,121);
     
+    background: linear-gradient(0deg, rgba(78,9,121,1) 0%, rgba(0,0,0,1) 25%);
+    
+    background-attachment: fixed;
 }
 
 .header-card {
