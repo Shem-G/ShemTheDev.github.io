@@ -15,20 +15,41 @@
     clip-path: circle(50% at 50% 50%);
 }
 
+.cont{
+    background-color: rgba(0,0,0,.75);
+    padding-right: 1em;
+    padding-left: 1em;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
 .black {
     background-color: #1D2023;
 }
 
 .bg-grid {
-    background-image: url("img\genesis_grid.png");
-    background-repeat: repeat;
+    position: relative;
+    width:100%;
+    height:100%;
+    background: #000 url("img/genesis_grid.png") repeat scroll 0 0;
+ 
 }
 
-.the-grid {
-    background: rgb(78,9,121);
+.bg-anim{
     
-    background: linear-gradient(0deg, rgba(78,9,121,1) 0%, rgba(0,0,0,1) 25%);
+}
+
+.bg-gridd:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(0,0,0);
     
+    
+    opacity: 1;
     background-attachment: fixed;
 }
 
