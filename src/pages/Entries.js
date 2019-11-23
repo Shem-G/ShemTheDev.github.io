@@ -18,37 +18,23 @@ class Entries extends Component {
         return (
             <EntryContext.Consumer>{(context) => {
                 const { entries } = context
-                let filteredEntries = entries.filter(
-                    (entry) => {
-                        return entry.fields.title.toLowerCase().indexOf(
-                            this.state.search.toLowerCase()) !== -1
-                    }
-                )
+                
 
                 return (
 
                     <div className="row justify-content-center mb-5">
-                        <div className="col-8">
-                            <div className="row no-gutters">
-                                <div className="col">
-                                    <h3 className="text-center"><u>Projects</u></h3>
-                                </div>
-
-                                <div className="col hidden">
-                                    <span className="input-group mb-3">
-                                        <input type="text" className="rounded-0 form-control " placeholder="Search projects" aria-label="Search projects"
-                                            value={this.state.search}
-                                            onChange={this.updateSearch.bind(this)}
-                                        />
-                                    </span>
-                                </div>
-                            </div>
-                            
-                            <div className="scrollable">
-                            <ListEntry entryData={filteredEntries} />
+                    <div className="col-8">
+                        <div className="row no-gutters">
+                            <div className="col">
+                                <h3 className="text-center"><u>Projects</u></h3>
                             </div>
                         </div>
+
+                        <div className="scrollable">
+                            <ListEntry entryData={entries} />
+                        </div>
                     </div>
+                </div>
                 )
 
             }}

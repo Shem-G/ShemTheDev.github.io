@@ -11,7 +11,7 @@ class EntryContextProvider extends Component{
     componentDidMount() {
         const fetchData = () => {
             axios
-            .get('https://api.airtable.com/v0/appeDXIgWSt9xRB6n/Links?api_key=keyxdvk2igijIb9Q0')
+            .get('https://api.airtable.com/v0/appeDXIgWSt9xRB6n/Portfolio%20Entries?api_key=keyxdvk2igijIb9Q0')
             .then(({ data }) => {
                 this.setState({
                     entries: data.records
