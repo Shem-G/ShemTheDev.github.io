@@ -1,0 +1,97 @@
+.media-img {
+    width: 100%;
+    height: 100%;
+}
+
+.round-img {
+    width: 75px;
+    height: 75px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.round-img-lg {
+    width: 125px;
+    height: 125px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.cont{
+    background-color: rgba(0,0,0,.75);
+    padding-right: 1em;
+    padding-left: 1em;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.black {
+    background-color: #1D2023;
+}
+
+.bg-grid {
+    position: relative;
+    width:100%;
+    height:100%;
+    background: #000 url("img/genesis_grid.png") repeat scroll 0 0;
+    animation: animatedBackground 500s linear infinite;
+}
+
+@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+  /*use negative width if you want it to flow right to left else and positive for left to right*/
+    to {
+      background-position: -10000px 0;
+    }
+  }
+
+@-moz-keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+  /*use negative width if you want it to flow right to left else and positive for left to right*/
+    to {
+      background-position: -10000px 0;
+    }
+  }
+
+.header-card {
+    @media (max-width: 575.98px){
+      font-size: 10px;
+    }
+}
+
+.content-card {
+    animation: card-shrink 0.5s 1 forwards;
+    -webkit-animation: card-shrink 0.5s 1 forwards;
+}
+
+.content-card:hover {
+    animation: card-expand 0.5s 1 forwards;
+    -webkit-animation: card-expand 0.5s 1 forwards;
+}
+
+@keyframes card-expand {
+    from {transform: scale(1);}
+    to {transform: scale(1.1);}
+}
+
+@keyframes card-shrink {
+    from {transform: scale(1.1);}
+    to {transform: scale(1);}
+}
+
+@-moz-keyframes card-expand {
+    from {transform: scale(1);}
+    to {transform: scale(1.1);}
+}
+
+@-moz-keyframes card-shrink {
+    from {transform: scale(1.1);}
+    to {transform: scale(1);}
+}
+
+body.preload *{
+    animation-duration: 0s !important;
+    -webkit-animation-duration: 0s !important;
+}
